@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.backend.controller.OrderController">
+   <children>
+      <Button fx:id="btnCancel" focusTraversable="false" layoutX="188.0" layoutY="333.0" mnemonicParsing="false" onAction="#deletePenjualan" text="batalkan pesanan" />
+      <Label fx:id="lblOrder" alignment="TOP_LEFT" layoutX="188.0" layoutY="98.0" prefHeight="178.0" prefWidth="147.0" style="-fx-border-style: solid;" text="Label" wrapText="true">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Label>
+      <Button fx:id="btnBack" focusTraversable="false" layoutX="119.0" layoutY="163.0" mnemonicParsing="false" onAction="#back" prefHeight="43.0" prefWidth="28.0" text="&lt;" />
+      <Button fx:id="btnNext" focusTraversable="false" layoutX="455.0" layoutY="163.0" mnemonicParsing="false" onAction="#next" prefHeight="43.0" prefWidth="28.0" text="&gt;" />
+      <Label fx:id="lblJumlah" alignment="TOP_LEFT" layoutX="366.0" layoutY="98.0" prefHeight="178.0" prefWidth="46.0" style="-fx-border-style: solid;" text="Label" wrapText="true" />
+      <Label layoutX="188.0" layoutY="70.0" text="Nama Produk" />
+      <Label layoutX="366.0" layoutY="70.0" text="Jumlah" />
+      <Button fx:id="btnPrevious" focusTraversable="false" layoutX="29.0" layoutY="35.0" mnemonicParsing="false" onAction="#goToPrevious" text="back" />
+      <Label layoutX="188.0" layoutY="294.0" prefHeight="18.0" prefWidth="79.0" text="Total Harga :" />
+      <Label fx:id="lblRp" layoutX="286.0" layoutY="294.0" prefHeight="18.0" prefWidth="130.0" text="Rp" wrapText="true" />
+   </children>
+</AnchorPane>
